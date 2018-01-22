@@ -154,12 +154,12 @@ void loop() {
      UART connection to the ESP32 and so on.  
 
 - Compile and upload the ESP32 Firmware to the ESP32-PRO  
-  If you have done your "Hello World" for the PIC32 you can now  
+  If you have done your "Hello World" for the ESP32 you can now  
   compile it and upload it to the ESP32-PRO board.  
   For this, on the ESP32-PRO on PIC32 side, you can use the USB Device  
   for upload as USB Serial COM Port and over the transparent UART mode  
-  to the ESP32.  
-
+  to the ESP32. This will work very well with officially esptool.  
+  
   Depending on your used PIC32 Firmware you can example use DTR/RTS for a toggle  
   sequence and on match to your code, switch the ESP32 in bootloader mode.  
   There is an example code still in the test pipe and comes with the  
