@@ -91,7 +91,6 @@ This are ready to go toolchains with compiler and tools.
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
-
 }
 
 void loop() {
@@ -113,7 +112,7 @@ void loop() {
   For this, on the ESP32-PRO on PIC32 side, there is a Bootloader by factory  
   on the PIC32. If you start the first time this procedure,  
   there starts a driver install for the bootloader.
-  you find the driver in the ChipKIT32 core.  
+  You find the driver in the ChipKIT32 core.  
     
     For more Information on this have a look to the  
   DOCS in the Bootloader Folder here in this Repo  
@@ -140,7 +139,6 @@ void loop() {
 void setup() {
   // put your setup code here, to run once:
   Serial.begin(115200);
-
 }
 
 void loop() {
@@ -154,6 +152,24 @@ void loop() {
      You can talk over the PIC32 to the ESP32 and vice versa.  
      Also you can write a USB CDC ACM code for the PIC32 with transparent  
      UART connection to the ESP32 and so on.  
+
+- Compile and upload the ESP32 Firmware to the ESP32-PRO  
+  If you have done your "Hello World" for the PIC32 you can now  
+  compile it and upload it to the ESP32-PRO board.  
+  For this, on the ESP32-PRO on PIC32 side, you can use the USB Device  
+  for upload as USB Serial COM Port and over the transparent UART mode  
+  to the ESP32.  
+
+  Depending on your used PIC32 Firmware you can example use DTR/RTS for a toggle  
+  sequence and on match to your code, switch the ESP32 in bootloader mode.  
+  There is an example code still in the test pipe and comes with the  
+  pre release. Also you can connect by code PIC32 PINS with ESP32 PINS,  
+  that switch the ESP32 in download mode. Also you can use OTA for download  
+  a firmware to the ESP32.  
+  
+  ( ToDo: more detailed info and example code )   
+    
+
      
   This is the preliminary work copy for Basic's in this doing.  
   Stay tuned for the release version.
